@@ -1,4 +1,3 @@
-
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -6,12 +5,15 @@
   <title>Página Inicial</title>
   <style>
     
-    body {
-      
-      background-color:  #f9f9f9;
-      display: flex;
-      flex-direction: column;
-    }
+  body {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
 
     header {
       background-color: #004080;
@@ -63,18 +65,17 @@ footer div a {
       transition: color 0.3s;
     }
 
-
-    main {
-    
-      padding: 40px;
-      background-color: white;
-      box-shadow: 0 0 40px rgba(0,0,0,0.1);
-      margin: 50px auto;
-      max-width: 1000px;
-      height: 300px;
-      border-radius: 8px;
-    }
-
+main {
+  flex: 1;
+    padding: 40px;
+  background-color: white;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
 
     @media (max-width: 600px) {
       header, main, footer {
